@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Loan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/stylesheets/style.css"/>
+</head>
+<body>
+    <div class="container">
+    	<!-- ----------- -->
+        <!-- Heading -->
+        <div class="heading">
+            <h1>Bank Loan Prediction System</h1>
+        </div>
+
+        <!-- -------------------------------- -->
+        <!-- Form -->
+        <div class="form">
+        	<form action="/predict" method="POST">
+	            <!-- ====>>>>> Column 1 -->
+	            <div class="col col1">
+	                <!-- Row1 -->
+	                <div class="rows row1">
+	                    <!-- 1. Current Loan Amount -->
+	                    <b>Current Loan Amount:</b>
+	                    <label>
+	                        <input type="text" name="Current Loan Amount" required>
+	                    </label>
+	                </div>
+
+	                <!-- Row2 -->
+	                <div class="rows row2">
+	                    <!-- 2. Term -->
+	                    <b>Term:</b>
+	                    <label>
+	                        <select name="Term" required>
+								<option disabled selected value>
+									-- Select an Option --
+								  </option>
+								  <option value="Short Term">Short Term</option>
+								  <option value="Long Term">Long Term</option>
+							</select>
+	                    </label>
+	                </div>
+
+	                <!-- Row3 -->
+	                <div class="rows row3">
+	                    <!-- 3. Credit Score -->
+	                    <b>Credit Score:</b>
+	                    <label>
+	                        <input type="text" name="Credit Score" required>
+	                    </label>
+	                </div>
+
+	                <!-- Row4 -->
+	                <div class="rows row4">
+	                    <!-- 4. Annual Income -->
+	                    <b>Annual Income:</b>
+	                    <label>
+	                        <input type="text" name="Annual Income" required>
+	                    </label>
+	                </div>
+
+	                <!-- Row5 -->
+	                <div class="rows row5">
+	                    <!-- 5. Years in current job -->
+	                    <b>Years in current job:</b>
+	                    <label>
+	                        <input type="text" name="Years in current job" placeholder="0 - 10" required>
+	                    </label>
+	                </div>
+
+	                <!-- Row6 -->
+	                <div class="rows row6">
+	                    <!-- 6. Home Ownership -->
+	                    <b>Home Ownership:</b>
+	                    <label>
+	                        <select name="Home Ownership" required>
+								<option disabled selected value>
+									-- Select an Option --
+								  </option>
+								  <option value="Home Mortgage">Home Mortgage</option>
+								  <option value="Rent">Rent</option>
+								  <option value="Own Home">Own Home</option>
+								  <option value="Have Mortgage">Have Mortgage</option>
+
+	                        </select>
+	                    </label>
+	                </div>
+
+	                <!-- Row7 -->
+	                <div class="rows row7">
+	                    <!-- 7. Purpose -->
+	                    <b>Purpose:</b>
+	                    <label>
+	                        <select name="Purpose" required>
+								<option disabled selected value>
+									-- Select an Option --</option>
+								  <option value="Debt Consolidation">Debt Consolidation</option>
+								  <option value="Home Improvements">Home Improvements</option>
+								  <option value="Business Loan">Business Loan</option>
+								  <option value="Buy a Car">Buy a Car</option>
+								  <option value="Medical Bills">Medical Bills</option>
+								  <option value="Buy House">Buy House</option>
+								  <option value="Take a Trip">Take a Trip</option>
+								  <option value="major_purchase">major purchase</option>
+								  <option value="small_business">small business</option>
+								  <option value="moving">moving</option>
+								  <option value="wedding">wedding</option>
+								  <option value="vacation">vacation</option>
+								  <option value="Educational Expenses">Educational Expenses</option>
+								  <option value="renewable_energy">Renewable energy</option>
+								  <option value="other">Other</option>
+	                        </select>
+	                    </label>
+	                </div>
+
+	                <!-- Row8 -->
+	                <div class="rows row8">
+	                	<!-- 8. Monthly Debt -->
+		                <b>Monthly Debt: </b>
+		                <label>
+		                    <input type="text" name="Monthly Debt" required>
+		                </label>
+	                </div>
+	            </div>
+	            
+
+	            <!-- ====>>>>> Column 2 -->
+	            <div class="col col2">
+	            	<!-- Row1 -->
+	                <div class="rows row1">
+	                	<!-- 9. Years of Credit History -->
+		                <b>Years of Credit History: </b>
+		                <label>
+		                    <input type="text" name="Years of Credit History" placeholder="e.g. 11.1" required>
+		                </label>
+	                </div>
+
+	                <!-- Row2 -->
+	    		    <div class="rows row2">
+	    		    	<!-- 10. Number of Open Accounts -->
+		                <b>Number of Open Accounts:</b>
+		                <label>
+		                    <input type="text" name="Number of Open Accounts"  placeholder="quantity" required>
+		                </label>
+	    		    </div>
+
+	    		    <!-- Row3 -->
+	    		    <div class="rows row3">
+	    		    	<!-- 11. Number of Credit Problems -->
+		                <b>Number of Credit Problems:</b>
+		                <label>
+		                    <input type="text" name="Number of Credit Problems"  placeholder="quantity" required>
+		                </label>
+	    		    </div>
+
+	    		    <!-- Row4 -->
+	    		    <div class="rows row4">
+	    		    	<!-- 12. Current Credit Balance -->
+		                <b>Current Credit Balance:</b>
+		                <label>
+		                    <input type="text" name="Current Credit Balance" required>
+		                </label>
+	    		    </div>
+
+	    		    <!-- Row5 -->
+	    		    <div class="rows row5">
+	    		    	<!-- 13. Maximum Open Credit -->
+		                <b>Maximum Open Credit:</b>
+		                <label>
+		                    <input type="text" name="Maximum Open Credit" required>
+		                </label>
+	    		    </div>
+
+	    		    <!-- Row6 -->
+	    		    <div class="rows row6">
+	    		    	<!-- 14. Bankruptcies -->
+		                <b>Bankruptcies:</b>
+		                <label>
+		                    <input type="text" name="Bankruptcies"  placeholder="quantity" required>
+		                </label>
+	    		    </div>
+
+	    		    <!-- Row7 -->
+	    		    <div class="rows row7">
+	    		    	<!-- 15. Tax Liens -->
+		                <b>Tax Liens:</b>
+		                <label>
+		                    <select name="Tax Liens" method="GET" required>
+								<option disabled selected value>
+									-- Select an Option --
+								  </option>
+								  <option value="0">0</option>
+								  <option value="1">1</option>
+		                    </select>
+		                </label>
+	    		    </div>		    
+	            </div>
+
+	            <!-- --------------------------------------------- -->
+	            <!-- Send Datas Button -->
+	            <div class="buton">
+	                <button type="submit" id="predict">Predict</button>
+	            </div>
+	        </form>
+        </div>
+    </div>
+</body> 
+</html>
